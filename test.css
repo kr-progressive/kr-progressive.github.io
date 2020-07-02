@@ -121,11 +121,10 @@ header.sticky ul li a:hover{
 	grid-gap: 30px;
 	max-width: 100%;
 	margin-top: 40px;
-	margin-left: 10%;
 }
 .yard{
 	position: relative;
-	align-self: center;
+	margin: 0 auto;
 }
 .yard .pack{
 	width: 300px;
