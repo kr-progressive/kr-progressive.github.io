@@ -15,23 +15,30 @@ body{
 }
 header{
 	position: fixed;
+	padding: 10px 0;
 	top: 0;
 	left: 0;
-	width: 90%;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px 100px;
 	z-index: 1000;
 	transition: 0.6s;
 }
 header.sticky{
-	padding: 5px 100px;
+	padding: 5px 0;
 	background: #fff;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 }
+header.sticky .logo{
+	padding: 0 0 0 100px;
+}
+header.sticky ul{
+	padding: 0 100px 0 0;
+}
 header .logo{
 	position: relative;
+	padding: 0 0 0 100px;
 	font-weight: 700;
 	color: #fff;
 	text-decoration: none;
@@ -42,6 +49,7 @@ header .logo{
 }
 header ul{
 	position: relative;
+	padding: 0 100px 0 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
