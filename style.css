@@ -231,8 +231,8 @@ header.sticky ul li a:hover{
 }
 .stats{
 	background: #000;
-	padding-top: 350px;
-	margin-top: -350px;
+	padding-top: 10%;
+	margin-top: -20%;
 }
 .stats h3,
 .stats p{
@@ -372,46 +372,94 @@ header.sticky ul li a:hover{
 .copyright a{
 	color: #fff;
 }
-.secbtn{
+.toggle{
 	display: none;
 }
+
 @media (max-width: 900px){
-	header{
-		display: none;
+	header .logo{
+		padding: 0 0 0 50px;
+	}
+	header .toggle{
+		margin: 0 50px 0 0;
+	}
+	header.sticky .logo{
+		padding: 0 0 0 50px;
+	}
+	header.sticky ul{
+		padding: 0 50px 0 0;
+	}
+	.toggle{
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+	}
+	.toggle:before{
+		content: '';
+		position: absolute;
+		top: 4px;
+		width: 100%;
+		height: 2px;
+		background: #000;
+		z-index: 10000;
+		box-shadow: 0 10px 0 #000;
+		transition: 0.5s;
+	}
+	.toggle:after{
+		content: '';
+		position: absolute;
+		bottom: 4px;
+		width: 100%;
+		height: 2px;
+		background: #000;
+		z-index: 10000;
+		transition: 0.5s;
+	}
+	.banner{
+		background-position: center;
 	}
 	.banner h2{
-		font-size: 70px;
-	}
-	.secbtn{
-		display: block;
-		text-align: center;
-		position: fixed;
-		top: 10%;
-		right: 0;
-		transform: translateY(-30%);
-		margin: 0;
-		padding: 0;
-		z-index: 100;
-	}
-	.secbtn ul li{
-		list-style: none;
-	}
-	.secbtn ul li a{
-		display: block;
-		text-decoration: none;
-		height: 30px;
-		font-size: 20px;
-		background: #262626;
-		color: #fff;
-		margin: 10px 0;
-		padding: 0 5px 0 5px;
-		border-bottom-right-radius: 5px;
-		border-top-right-radius: 5px;
-		border-bottom-left-radius: 5px;
-		border-top-left-radius: 5px;
+		font-size: 60px;
+		padding: 0 50px;
 	}
 	.contactForm iframe{
 		width: 300px;
 		height: 250px;
+	}
+
+	header{
+		background: #fff;
+	}
+	header ul{
+		position: absolute;
+		top: 30px;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		text-align: center;
+		overflow: auto;
+		background: #fff;
+		visibility: hidden;
+		opacity: 0;
+	}
+	header.active ul{
+		visibility: visible;
+		opacity: 1;
+		display: block;
+		padding-top: 20px;
+	}
+	header.active ul li a{
+		display: inline-block;
+		margin: 10px 0;
+		font-size: 20px;
+	}
+	header .logo,
+	header ul li a{
+		color: #000;
+	}
+	.sec{
+		padding: 100px 50px 50px 50px;
 	}
 }

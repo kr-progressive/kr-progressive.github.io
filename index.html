@@ -12,24 +12,15 @@
 	<header id="header">
 		<a href="#" class="logo">Logo</a>
 		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#team">Team</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#home" onClick="toggle()">Home</a></li>
+			<li><a href="#about" onClick="toggle()">About</a></li>
+			<li><a href="#services" onClick="toggle()">Services</a></li>
+			<li><a href="#portfolio" onClick="toggle()">Portfolio</a></li>
+			<li><a href="#team" onClick="toggle()">Team</a></li>
+			<li><a href="#contact" onClick="toggle()">Contact</a></li>
 		</ul>
+		<div class="toggle" onClick="toggle()"></div>
 	</header>
-	<div class="secbtn">
-		<ul>
-			<li><a href="#home">1p</a></li>
-			<li><a href="#about">2p</a></li>
-			<li><a href="#services">3p</a></li>
-			<li><a href="#portfolio">4p</a></li>
-			<li><a href="#team">5p</a></li>
-			<li><a href="#contact">6p</a></li>
-		</ul>
-	</div>
 	<!-- Banner -->
 	<section class="banner" id="home">
 		<h2>가상에<br><span>현실을</span> 더하다</h2>
@@ -246,6 +237,10 @@
 			var header = document.querySelector("header");
 			header.classList.toggle("sticky", window.scrollY > 0);
 		})
+		function toggle(){
+			var header = document.querySelector("header");
+			header.classList.toggle("active");
+		}
 	</script>
 </body>
 </html>
