@@ -102,7 +102,7 @@ header.sticky ul li a:hover{
 }
 .sec{
 	background: #fff;
-	padding: 100px;
+	padding: 100px 0;
 	min-height: 80vh;
 	display: flex;
 	justify-content: center;
@@ -210,7 +210,7 @@ header.sticky ul li a:hover{
 	margin-top: 40px;
 }
 .services .box{
-	width: 300px;
+	width: 250px;
 	margin: 0 auto;
 	background: #fff;
 	padding: 20px;
@@ -354,6 +354,7 @@ header.sticky ul li a:hover{
 .contact h3,
 .contact p{
 	color: #fff;
+	padding: 0 15px;
 }
 .call{
 	text-align: left;
@@ -375,6 +376,9 @@ header.sticky ul li a:hover{
 @media (max-width: 900px){
 	header{
 		display: none;
+	}
+	.banner h2{
+		font-size: 70px;
 	}
 	.secbtn{
 		display: block;
@@ -403,5 +407,9 @@ header.sticky ul li a:hover{
 		border-top-right-radius: 5px;
 		border-bottom-left-radius: 5px;
 		border-top-left-radius: 5px;
+	}
+	.contactForm iframe{
+		width: 300px;
+		height: 250px;
 	}
 }
