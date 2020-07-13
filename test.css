@@ -356,7 +356,7 @@ header.sticky ul li a:hover{
 	color: #fff;
 }
 .contact .content .mxw800p p{
-	padding: 0 15px 0 20%;
+	padding: 0 15px 0 15%;
 }
 .call{
 	text-align: left;
@@ -413,8 +413,5 @@ header.sticky ul li a:hover{
 	.contactForm iframe{
 		width: 300px;
 		height: 250px;
-	}
-	.contact .content .mxw800p p{
-	padding: 0 15px 0 10%;
 	}
 }
