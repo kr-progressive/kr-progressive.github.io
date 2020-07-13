@@ -354,7 +354,9 @@ header.sticky ul li a:hover{
 .contact h3,
 .contact p{
 	color: #fff;
-	padding: 0 15px;
+}
+.contact .content .mxw800p p{
+	padding: 0 15px 0 20%;
 }
 .call{
 	text-align: left;
