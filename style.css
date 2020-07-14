@@ -127,8 +127,10 @@ header.sticky ul li a:hover{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 30px;
-	max-width: 100%;
-	margin-top: 40px;
+	max-width: 1400px;
+	justify-content: center;
+	align-items: center;
+	margin: 40px auto 0;
 }
 .yard{
 	position: relative;
@@ -206,8 +208,8 @@ header.sticky ul li a:hover{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 30px;
-	max-width: 100%;
-	margin-top: 40px;
+	max-width: 1400px;
+	margin: 40px auto 0;
 }
 .services .box{
 	width: 250px;
@@ -243,8 +245,8 @@ header.sticky ul li a:hover{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 20px;
-	max-width: 100%;
-	margin-top: 40px;
+	max-width: 1500px;
+	margin: 40px auto 0;
 }
 .statsBox h2{
 	color: #fff;
@@ -262,8 +264,8 @@ header.sticky ul li a:hover{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 30px;
-	max-width: 100%;
-	margin-top: 40px;
+	max-width: 1500px;
+	margin: 40px auto 0;
 }
 .workBx .brand{
 	position: relative;
@@ -293,8 +295,8 @@ header.sticky ul li a:hover{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 30px;
-	max-width: 100%;
-	margin-top: 40px;
+	max-width: 1500px;
+	margin: 40px auto 0;
 }
 .teamBx .member{
 	position: relative;
