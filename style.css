@@ -460,6 +460,9 @@ header.sticky ul li a:hover{
 		color: #000;
 	}
 	.sec{
-		padding: 100px 50px 50px 50px;
+		padding: 80px 30px 50px 30px;
+	}
+	.contact .content .mxw800p p{
+		padding: 0 0 0 10%;
 	}
 }
