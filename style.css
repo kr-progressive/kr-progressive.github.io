@@ -492,4 +492,9 @@ header.sticky ul li a:hover{
 	.prod .box{
 		width: 500px;
 	}
+	.pin-spacer{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
 }
