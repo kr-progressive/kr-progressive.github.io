@@ -483,6 +483,9 @@ header.sticky ul li a:hover{
 	.contact .content .mxw800p p{
 		padding: 0 0 0 10%;
 	}
+	.prod{
+		padding: 0;
+	}
 	.prod .text{
 		font-size: 3em;
 	}
