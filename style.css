@@ -396,10 +396,6 @@ header.sticky ul li a:hover{
 }
 
 @media (max-width: 900px){
-	body{
-		width: 100%;
-		overflow-x: hidden;
-	}
 	header .logo{
 		padding: 0 0 0 50px;
 	}
@@ -482,7 +478,7 @@ header.sticky ul li a:hover{
 		color: #000;
 	}
 	.sec{
-		padding: 80px 30px 50px 30px;
+		padding: 80px 50px;
 	}
 	.contact .content .mxw800p p{
 		padding: 0 0 0 10%;
