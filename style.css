@@ -259,37 +259,53 @@ header.sticky ul li a:hover{
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
-.workBx{
+
+.prod{
 	position: relative;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-gap: 30px;
-	max-width: 1500px;
-	margin: 40px auto 0;
+	width: 100%;
+	min-height: 90vh;
+	padding: 0 0 100px;
 }
-.workBx .brand{
-	position: relative;
-	background: #4978ff;
-	min-height: 300px;
-	width: 250px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.prod .box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1300px;
+	transform: translate(-50%,-50%);
 }
-.workBx .brand:hover{
-	background: #000;
+.prod .box1 img{
+	width: 100%;
+	height: 100%;
 }
-.workBx .brand a{
-	text-decoration: none;
-	color: rgba(255,255,255,0.4);
-	text-transform: uppercase;
-	font-size: 14px;
-	letter-spacing: 2px;
+.prod .box2 img{
+	width: 100%;
+	height: 100%;
 }
-.workBx .brand:hover a{
-	color: rgba(255,255,255,1);
+.prod .box3 img{
+	width: 100%;
+	height: 100%;
 }
+.prod .box4 img{
+	width: 100%;
+	height: 100%;
+}
+.prod .box5 img{
+	width: 100%;
+	height: 100%;
+}
+.prod .text{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 40%;
+	left: 50%;
+	font-size: 7em;
+	font-weight: 400;
+}
+.prod .text span{
+	color: #16b716;
+	font-weight: 700;
+}
+
 .teamBx{
 	position: relative;
 	display: grid;
@@ -465,5 +481,11 @@ header.sticky ul li a:hover{
 	}
 	.contact .content .mxw800p p{
 		padding: 0 0 0 10%;
+	}
+	.prod .text{
+		font-size: 3em;
+	}
+	.prod .box{
+		width: 900px;
 	}
 }
