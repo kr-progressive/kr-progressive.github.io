@@ -396,6 +396,10 @@ header.sticky ul li a:hover{
 }
 
 @media (max-width: 900px){
+	body{
+		width: 100%;
+		overflow-x: hidden;
+	}
 	header .logo{
 		padding: 0 0 0 50px;
 	}
