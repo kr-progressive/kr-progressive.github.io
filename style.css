@@ -12,6 +12,7 @@ body{
 	margin: 0;
 	padding: 0;
 	min-height: 1000px;
+	overflow-x: hidden;
 }
 header{
 	position: fixed;
@@ -486,6 +487,6 @@ header.sticky ul li a:hover{
 		font-size: 3em;
 	}
 	.prod .box{
-		width: 900px;
+		width: 500px;
 	}
 }
