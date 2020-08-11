@@ -217,7 +217,7 @@
 			square.style.height = 20 + size +'px';
 			
 			square.style.top = Math.random() * innerHeight + 'px';
-			square.style.left = Math.random() * innerWidth + 'px';
+			square.style.left = Math.random() * (innerWidth * 0.95) + 'px';
 			
 			const bg = colors[Math.floor(Math.random() * colors.length)];
 			square.style.background = bg;
