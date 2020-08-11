@@ -10,7 +10,7 @@
 <body>
 	<!-- Header -->
 	<header id="header">
-		<a href="#" class="logo">Logo</a>
+		<a href="#" class="logo"><img src="logo.png"></a>
 		<ul>
 			<li><a href="#home" onClick="toggle()">Home</a></li>
 			<li><a href="#about" onClick="toggle()">About</a></li>
@@ -23,7 +23,7 @@
 	</header>
 	<!-- Banner -->
 	<section class="banner" id="home">
-		<h2>가상에<br><span>현실을</span> 더하다</h2>
+		<h1>가상에<br><span>현실을</span> 더하다</h1>
 	</section>
 	<!-- About -->
 	<section class="sec" id="about">
@@ -114,41 +114,11 @@
 			</div>
 		</div>
 	</section>
-	<!-- Stats -->
-	<section class="sec stats">
-		<div class="content">
-			<div class="mxw800p">
-				<h3>Our Achievements</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-			</div>
-			<div class="statsBox">
-				<div class="box">
-					<h2>1200+</h2>
-					<h4>Projects</h4>
-				</div>
-				<div class="box">
-					<h2>800+</h2>
-					<h4>Happy Clients</h4>
-				</div>
-				<div class="box">
-					<h2>150+</h2>
-					<h4>Countries</h4>
-				</div>
-				<div class="box">
-					<h2>50+</h2>
-					<h4>Awards</h4>
-				</div>
-			</div>
-		</div>
-	</section>
+	<!-- Background -->
+	<section class="black"></section>
 	<!-- Product -->
 	<section class="prod" id="product">
-		<h2 class="text">스마트<br><span>예비군</span><br>키오스크</h2>
-		<div class="box box1"><img src="01.png"></div>
-		<div class="box box2"><img src="c.png"></div>
-		<div class="box box3"><img src="cc.png"></div>
-		<div class="box box4"><img src="ccc.png"></div>
-		<div class="box box5"><img src="cccc.png"></div>
+		
 	</section>
 	<!-- Team -->
 	<section class="sec" id="team">
@@ -228,25 +198,38 @@
 			header.classList.toggle("active");
 		}
 	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
-	<script type="text/javascript">
-		gsap.timeline({
-			scrollTrigger: {
-				trigger: ".prod",
-				start: "center center",
-				end: "bottom top",
-				scrub: true,
-				markers: false,
-				pin: true
-			}
-		})
-		.to(".text", {scale : 0})
-		.from(".box1", {x : innerWidth * -1})
-		.from(".box2", {opacity : 0})
-		.from(".box3", {opacity : 0})
-		.from(".box4", {opacity : 0})
-		.from(".box5", {opacity : 0})
+	<script>
+		
+		const colors = [
+			'#2196f3',
+			'#e91e63',
+			'#ffeb3b',
+			'#74ff1d'
+		]
+		
+		function createSquare(){
+			const section = document.querySelector('.prod');
+			const square = document.createElement('span');
+			
+			var size = Math.random() * 50;
+			
+			square.style.width = 20 + size +'px';
+			square.style.height = 20 + size +'px';
+			
+			square.style.top = Math.random() * innerHeight + 'px';
+			square.style.left = Math.random() * innerWidth + 'px';
+			
+			const bg = colors[Math.floor(Math.random() * colors.length)];
+			square.style.background = bg;
+			
+			section.appendChild(square);
+			
+			setTimeout(() =>{
+				square.remove()
+			},5000)
+		}
+		
+		setInterval(createSquare , 150)
 	</script>
 </body>
 </html>
