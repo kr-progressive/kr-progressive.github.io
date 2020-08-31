@@ -497,7 +497,7 @@ header.sticky ul li a:hover{
 	}
 	.prod .kiosk1 img{
 		position: relative;
-		max-width: 500px;
+		max-width: 400px;
 		padding: 0px;
 	}
 	.prod .kitext1{
@@ -513,7 +513,7 @@ header.sticky ul li a:hover{
 	}
 	.prod .kiosk2 img{
 		position: relative;
-		max-width: 500px;
+		max-width: 400px;
 		padding-bottom: 50px;
 	}
 	.kitext1 h3{
