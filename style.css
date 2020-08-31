@@ -78,6 +78,7 @@ header.sticky ul li a:hover{
 	color: #fff;
 	background: #f00;
 }
+
 .banner{
 	position: relative;
 	width: 100%;
@@ -101,6 +102,7 @@ header.sticky ul li a:hover{
 .banner h1 span{
 	color: #4978ff;
 }
+
 .sec{
 	background: #fff;
 	padding: 100px 0;
@@ -204,6 +206,7 @@ header.sticky ul li a:hover{
 	background: #333;
 	color: #fff;
 }
+
 .services{
 	position: relative;
 	display: grid;
@@ -245,28 +248,64 @@ header.sticky ul li a:hover{
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
+	padding-top: 50px;
+	margin-top: -350px;
 }
-.prod span{
-	position: absolute;
-	pointer-events: none;
-	background: #fff;
-	animation: animate 5s linear infinite;
+.prod h2{
+	margin-top: 10%;
+	text-align: center;
+	align-items: center;
+	font-size: 5em;
+	color: #fff;
 }
-@keyframes animate{
-	0%{
-		transform: scale(0) translateY(200%) rotate(0deg);
-		opacity: 0;
-	}
-	10%{
-		opacity: 1;
-	}
-	90%{
-		opacity: 1;
-	}
-	100%{
-		transform: scale(1) translateY(-300%) rotate(360deg);
-		opacity: 0;
-	}
+.prod h2 span{
+	color: #00FF3C;
+}
+.prod .kiosk1{
+	position: relative;
+	top: 0;
+	display: flex;
+}
+.prod .kiosk1 img{
+	position: relative;
+	max-width: 900px;
+	padding-left: 50px;
+	padding-bottom: 50px;
+}
+.prod .kitext1{
+	color: #fff;
+	text-align: center;
+	padding-top: 5%;
+	width: 50%;
+}
+.kitext1 h3{
+	font-size: 2.5em;
+}
+.kitext1 p{
+	font-size: 1.5em;
+}
+.prod .kiosk2{
+	position: relative;
+	top: 0;
+	display: flex;
+}
+.prod .kitext2{
+	color: #fff;
+	text-align: center;
+	padding-top: 5%;
+	width: 50%;
+}
+.kitext2 h3{
+	font-size: 2.5em;
+}
+.kitext2 p{
+	font-size: 1.5em;
+}
+.prod .kiosk2 img{
+	position: relative;
+	max-width: 900px;
+	padding-bottom: 50px;
+	padding-right: 50px;
 }
 
 .teamBx{
@@ -329,6 +368,7 @@ header.sticky ul li a:hover{
 	font-size: 12px;
 	font-weight: 300;
 }
+
 .contact{
 	background: #000;
 }
@@ -446,17 +486,46 @@ header.sticky ul li a:hover{
 		padding: 0 0 0 10%;
 	}
 	.prod{
-		padding: 0;
+		justify-content: center;
+		align-items: center;
 	}
-	.prod .text{
-		font-size: 3em;
+	.prod h2{
+		font-size: 2em;
 	}
-	.prod .box{
-		width: 500px;
+	.prod .kiosk1{
+		display: block;
 	}
-	.pin-spacer{
-		padding: 0;
-		margin: 0;
+	.prod .kiosk1 img{
+		position: relative;
+		max-width: 500px;
+		padding: 0px;
+	}
+	.prod .kitext1{
+		padding-bottom: 50px;
 		width: 100%;
+	}
+	.prod .kiosk2{
+		display: block;
+	}
+	.prod .kitext2{
+		padding: 0;
+		width: 100%;
+	}
+	.prod .kiosk2 img{
+		position: relative;
+		max-width: 500px;
+		padding-bottom: 50px;
+	}
+	.kitext1 h3{
+		font-size: 1.5em;
+	}
+	.kitext1 p{
+		font-size: 1em;
+	}
+	.kitext2 h3{
+		font-size: 1.5em;
+	}
+	.kitext2 p{
+		font-size: 1em;
 	}
 }
