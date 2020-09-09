@@ -236,23 +236,18 @@ header.sticky ul li a:hover{
 	text-transform: uppercase;
 	font-weight: 700;
 }
-.black{
-	background: #000;
-	padding-top: 10%;
-	margin-top: -20%;
-	min-height: 30vh;
-}
 
 .prod{
 	background: #000;
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
-	padding-top: 50px;
-	margin-top: -350px;
+	padding-top: 10px;
+	justify-content: center;
+	align-items: center;
 }
 .prod h2{
-	margin-top: 10%;
+	margin-top: 6%;
 	text-align: center;
 	align-items: center;
 	font-size: 5em;
@@ -261,51 +256,42 @@ header.sticky ul li a:hover{
 .prod h2 span{
 	color: #00FF3C;
 }
-.prod .kiosk1{
-	position: relative;
-	top: 0;
+.prodblock{
 	display: flex;
 }
-.prod .kiosk1 img{
-	position: relative;
-	max-width: 900px;
-	padding-left: 50px;
-	padding-bottom: 50px;
+.swiper-container
+{
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
-.prod .kitext1{
+.swiper-slide
+{
+	background-position: center;
+	background-size: cover;
+	background: #000;
+}
+.ss1, .ss2{
+	width: 700px;
+	height: 400px;
+}
+.ss3, .ss4, .ss5{
+	width: 700px;
+	height: 500px;
+}
+.swiper-slide img{
+	max-width: 700px;
+}
+.prodtext{
 	color: #fff;
 	text-align: center;
-	padding-top: 5%;
-	width: 50%;
-}
-.kitext1 h3{
-	font-size: 2.5em;
-}
-.kitext1 p{
-	font-size: 1.5em;
-}
-.prod .kiosk2{
-	position: relative;
-	top: 0;
-	display: flex;
-}
-.prod .kitext2{
-	color: #fff;
-	text-align: center;
-	padding-top: 5%;
-	width: 50%;
-}
-.kitext2 h3{
-	font-size: 2.5em;
-}
-.kitext2 p{
-	font-size: 1.5em;
-}
-.prod .kiosk2 img{
-	position: relative;
-	max-width: 900px;
 	padding-bottom: 50px;
-	padding-right: 50px;
+}
+.prodtext h3{
+	font-size: 1.5em;
+}
+.prodtext h3 span{
+	color: #4CC0D8;
 }
 
 .teamBx{
@@ -488,49 +474,35 @@ header.sticky ul li a:hover{
 	.prod{
 		justify-content: center;
 		align-items: center;
+		padding-top: 50px;
 	}
 	.prod h2{
+		padding-top: 50px;
 		font-size: 2em;
 	}
-	.prod .kiosk1{
-		display: block;
-	}
-	.prod .kiosk1 img{
-		position: relative;
-		max-width: 400px;
-		padding: 0;
-		display: block;
-		margin: 0 auto;
-	}
-	.prod .kitext1{
-		padding-top: 0;
-		padding-bottom: 50px;
+	.swiper-container
+	{
 		width: 100%;
+		padding-bottom: 0px;
 	}
-	.prod .kiosk2{
-		display: block;
+	.swiper-slide
+	{
+		background-position: center;
+		background-size: cover;
+		background: #000;
 	}
-	.prod .kitext2{
-		padding: 0;
-		width: 100%;
+	.ss1, .ss2{
+		width: 400px;
+		height: 250px;
 	}
-	.prod .kiosk2 img{
-		position: relative;
+	.ss3, .ss4, .ss5{
+		width: 400px;
+		height: 300px;
+	}
+	.swiper-slide img{
 		max-width: 400px;
-		padding: 0;
-		display: block;
-		margin: 0 auto;
 	}
-	.kitext1 h3{
-		font-size: 1.5em;
-	}
-	.kitext1 p{
-		font-size: 1em;
-	}
-	.kitext2 h3{
-		font-size: 1.5em;
-	}
-	.kitext2 p{
-		font-size: 1em;
+	.prodtext{
+		padding: 0 10px 50px 10px;
 	}
 }

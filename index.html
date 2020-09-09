@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, inital-scale=1.0">
 <meta charset="utf-8">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <link rel="stylesheet" href="style.css">
 <title>프로그레시브, IOT Owner</title>
 </head>
@@ -114,28 +115,23 @@
 			</div>
 		</div>
 	</section>
-	<!-- Background -->
-	<section class="black"></section>
 	<!-- Product -->
 	<section class="prod" id="product">
 		<h2><span>스마트</span> 예비군 Kiosk</h2>
-		<div class="kiosk1">
-			<div class="img1">
-				<img src="주민등록증.gif">
-			</div>
-			<div class="kitext1">
-				<h3>신분증만 넣으면 간편한 입소!</h3>
-				<p>최신 비대면 자동화 예비군 관리 프로그램</p>
-			</div>
+		<div class="prodblock">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+      				<div class="swiper-slide ss1"><img src="p1.png"></div>
+      				<div class="swiper-slide ss2"><img src="p2.png"></div>
+					<div class="swiper-slide ss3"><img src="p3.png"></div>
+					<div class="swiper-slide ss4"><img src="p4.png"></div>
+					<div class="swiper-slide ss5"><img src="p5.png"></div>
+    			</div>
+  			</div>
 		</div>
-		<div class="kiosk2">
-			<div class="kitext2">
-				<h3>간단한 입력으로 퇴소까지 자동으로!</h3>
-				<p>빠른 입퇴소 환경 구축으로 훈련 효율을 더 높게</p>
-			</div>
-			<div class="img2">
-				<img src="훈련필증.gif">
-			</div>
+		<div class="prodtext">
+			<h3>빠르고 편리한 <span>예비군 입/퇴소</span>!</h3>
+			<p>입/퇴소의 자동화, 비대면화로 인한 효율적이고 안전한 예비군 훈련을 약속드립니다.</p>
 		</div>
 	</section>
 	<!-- Team -->
@@ -216,5 +212,21 @@
 			header.classList.toggle("active");
 		}
 	</script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+    	var swiper = new Swiper('.swiper-container', {
+    	  effect: 'coverflow',
+    	  grabCursor: true,
+    	  centeredSlides: true,
+    	  slidesPerView: 'auto',
+    	  coverflowEffect: {
+    	    rotate: 20,
+    	    stretch: 0,
+    	    depth: 500,
+    	    modifier: 3,
+    	    slideShadows: true,
+    	  }
+    	});
+  	</script>
 </body>
 </html>
