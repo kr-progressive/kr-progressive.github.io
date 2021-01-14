@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	min-height: 1000px;
+	overflow-x: hidden;
+}
+
+.banner{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background: url("bg-ex.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.banner img{
+	margin-bottom: -50px;
+}
+.banner h1{
+	font-size: 90px;
+	text-align: center;
+	line-height: 1em;
+	transition: 0.5s;
+	transform-origin: left;
+	transform: scaleX(1);
+}
+.banner h1 span{
+	font-size: 90px;
+	color: #4978ff;
+}
+
+.intro{
+	width: 100%;
+}
+.intro .product{
+	text-align: center;
+}
